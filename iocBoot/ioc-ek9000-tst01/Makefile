@@ -1,6 +1,6 @@
 TOP = ../..
 include $(TOP)/configure/CONFIG
-IOC=iocEK9KTest
-ARCH = linux-x86
+IOC=ioc-ek9000-tst01
+ARCH = linux-arm
 TARGETS = envPaths
 include $(TOP)/configure/RULES.ioc

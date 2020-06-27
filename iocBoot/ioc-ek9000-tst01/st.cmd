@@ -1,13 +1,13 @@
-#!../../bin/linux-x86_64/ek9000Test
+#!../../bin/linux-arm/ek9000IOC
 
 < envPaths
-dbLoadDatabase("../../dbd/ek9000Test.dbd")
+dbLoadDatabase("../../dbd/ek9000IOC.dbd")
 
 cd "${TOP}"
 
 ## Register all support components
-dbLoadDatabase "dbd/ek9000Test.dbd"
-ek9000Test_registerRecordDeviceDriver pdbbase
+dbLoadDatabase "dbd/ek9000IOC.dbd"
+ek9000IOC_registerRecordDeviceDriver pdbbase
 
 # My testing rail looks like this:
 # slave #      1         2         3        4
