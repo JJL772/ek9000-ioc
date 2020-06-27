@@ -1,0 +1,6 @@
+
+SUPPORT=/nfs/epics/epics-7.0.4-arm/modules
+EPICS_BASE=/nfs/epics/epics-7.0.4-arm/base
+ASYN=$(SUPPORT)/asyn-r4-39
+MODBUS=$(SUPPORT)/modbus-r3-0
+EK9000=$(SUPPORT)/ek9000-r1-1

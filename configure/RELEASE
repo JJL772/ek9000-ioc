@@ -1,0 +1,17 @@
+#RELEASE Location of external products
+
+# Default support and base settings
+SUPPORT=/home/jeremy/epics-7/extensions
+EPICS_BASE=/home/jeremy/epics-7/base 
+
+# Include local release file
+-include $(TOP)/configure/RELEASE.local 
+
+-include $(TOP)/../configure/SUPPORT.$(EPICS_HOST_ARCH)
+
+# Modbus and ASYN modules are dependencies
+MODBUS=$(SUPPORT)/modbus
+ASYN=$(SUPPORT)/asyn-4-36
+EK9000=$(SUPPORT)/ek9000
+-include $(TOP)/configure/RELEASE.local 
+-include $(TOP)/../configure/EPICS_BASE.$(EPICS_HOST_ARCH)
